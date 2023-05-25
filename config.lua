@@ -4,11 +4,11 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 --
 
-require('core.theme') -- Main style used
-require('core.treesitter') -- Configuration for LVIM builtin treesitter
-require('core.gitsigns') -- Cofiguration for LVIM builtin gitsigns
+require('core.theme')      -- Main style used
 
-require('keys.main') -- Keys for built-in features
-require('plugins.main') -- Definition of additional plugins 
-require('linters.main') -- Definition of linters used
+require('core.gitsigns')   -- Cofiguration for LVIM builtin gitsigns
+
+require('keys.main')       -- Keys for built-in features
+require('plugins.main')    -- Definition of additional plugins
+require('linters.main')    -- Definition of linters used
 require('formatters.main') -- Definition of formatters used
