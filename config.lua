@@ -4,11 +4,16 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 --
 
+vim.cmd(":set nofixendofline")
+
 require('core.theme')      -- Main style used
 
 require('core.gitsigns')   -- Cofiguration for LVIM builtin gitsigns
 
+-- Keybinds configuration
 require('keys.main')       -- Keys for built-in features
+require('keys.locals')      -- Keys that are not tracked by Git, for specific device purposes
+
 require('plugins.main')    -- Definition of additional plugins
 require('linters.main')    -- Definition of linters used
 require('formatters.main') -- Definition of formatters used
