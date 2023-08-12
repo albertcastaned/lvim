@@ -9,7 +9,10 @@ vim.cmd(":set nofixendofline")
 require('core.theme')      -- Main style used
 
 require('core.gitsigns')   -- Cofiguration for LVIM builtin gitsigns
+require('core.lualine')     -- Configuration for Lualine builtin
+require('core.bufferline')     -- Configuration for Bufferline builtin
 
+require ('core.treesitter') -- Configuration for treesitter
 -- Keybinds configuration
 require('keys.main')       -- Keys for built-in features
 require('keys.locals')      -- Keys that are not tracked by Git, for specific device purposes
