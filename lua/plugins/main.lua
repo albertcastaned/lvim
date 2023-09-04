@@ -8,7 +8,7 @@ lvim.plugins = {
     end,
   },
   {
-	  "ChristianChiarulli/swenv.nvim",
+    "ChristianChiarulli/swenv.nvim",
   },
   {
     "stevearc/dressing.nvim",
@@ -23,6 +23,12 @@ lvim.plugins = {
     "themaxmarchuk/tailwindcss-colors.nvim",
     config = function ()
       require("tailwindcss-colors").setup()
+    end
+  },
+  {
+    "simrat39/symbols-outline.nvim",
+    config = function()
+      require('symbols-outline').setup()
     end
   }
 }
@@ -51,3 +57,6 @@ nvim_lsp["tailwindcss"].setup({
   -- other settings --
   on_attach = on_attach,
 })
+
+require 'colorizer'.setup()
+

@@ -1,5 +1,5 @@
-lvim.colorscheme = "tokyonight-moon"
+lvim.colorscheme = "tokyonight-night"
 lvim.transparent_window = true
 
 
- lvim.builtin.lualine.options.theme = "tokyonight"
+ lvim.builtin.lualine.options.theme = "tokyonight-night"
