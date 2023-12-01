@@ -1,6 +1,6 @@
 lvim.plugins = {
   { 'folke/tokyonight.nvim' },
-  { "mrjones2014/nvim-ts-rainbow" },
+  { 'hiphish/rainbow-delimiters.nvim' },
   {
     "iamcco/markdown-preview.nvim",
     config = function()
@@ -57,16 +57,5 @@ lvim.builtin.cmp.formatting = {
   format = require("tailwindcss-colorizer-cmp").formatter
 }
 
-local nvim_lsp = require("lspconfig")
-local on_attach = function(client, bufnr)
-  -- other stuff --
-  require("tailwindcss-colors").buf_attach(bufnr)
-end
-
-nvim_lsp["tailwindcss"].setup({
-  -- other settings --
-  on_attach = on_attach,
-})
-
-require 'colorizer'.setup()
+lvim.builtin.treesitter.rainbow.enable = true
 
